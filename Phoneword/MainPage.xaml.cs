@@ -7,16 +7,20 @@ namespace Phoneword
     {
         string translatedNumber;
 
+        //Main Page method initialises the page when the class is called from app.xaml.cs
         public MainPage()
         {
             InitializeComponent();
         }
 
+        //A function that is called when the translate button is tapped
         void OnTranslate(object sender, EventArgs e)
         {
             //Take the phoneNumberText from the text box and send to
             //toNumber function in the PhoneWordTranslator
             translatedNumber = Core.PhonewordTranslator.ToNumber(phoneNumberText.Text);
+
+
             if (!string.IsNullOrWhiteSpace(translatedNumber))
             {
                 callButton.IsEnabled = true; //Enable call button

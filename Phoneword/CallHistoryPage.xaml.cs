@@ -13,3 +13,4 @@ namespace Phoneword
         }
     }
 }
+//This code initializes the call history page and adds recenty dialled numbers to it  

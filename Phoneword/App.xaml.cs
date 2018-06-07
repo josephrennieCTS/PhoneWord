@@ -5,15 +5,16 @@ using Xamarin.Forms.Xaml;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Phoneword
 {
-    public partial class App : Application
+    public partial class App : Application //Application Class
     {
         public static IList<string> PhoneNumbers { get; set; }
 
         public App()
         {
-            InitializeComponent();
-            PhoneNumbers = new List<string>();
-            MainPage = new NavigationPage(new MainPage());
+            
+            InitializeComponent();//Function used to start up app when icon is tapped
+            PhoneNumbers = new List<string>(); //A list created to store phoneNumbers that have been previously entered
+            MainPage = new NavigationPage(new MainPage()); //configures the first page opened when the app starts (mainPage)
         }
 
         protected override void OnStart()

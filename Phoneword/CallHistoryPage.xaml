@@ -14,3 +14,4 @@
       <ListView ItemsSource="{x:Static local:App.PhoneNumbers}" />
     </StackLayout>
 </ContentPage> 
+<!-- This code configures the CallHistoryPage -->
